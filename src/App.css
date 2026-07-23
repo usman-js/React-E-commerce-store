@@ -1,13 +1,15 @@
 
 :root{
   --bodycolor:#f2f0f1;
+  --cardscolor:#f0EEED;
+  --starcolor:#ffc633;
 }
 .navbar{
   display: flex;
   align-items: center;
     justify-content: space-between;
   background-color: white;
-  padding: 15px 50px;
+  padding: 15px 100px;
   gap: 30px;
 }
 .navbar h1{
@@ -41,7 +43,7 @@
   cursor: pointer;
 }
 .input-tag{
-  width: 477px;
+  width: 577px;
   height: 48px;
   background-color: transparent;
   border-radius: 0px 20px 20px 0px;
@@ -55,4 +57,189 @@
   display: flex;
   gap: 12px;
   cursor: pointer;
+}
+.hero{
+  background-image: url(./assets/HeroImg.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 90vh;
+  display: block;
+  background-position: bottom;
+
+}
+.hero-section h1{
+      font-size: 64px;
+      font-weight: 800;
+      font-family: "Inter", sans-serif;
+      text-align: left;
+}
+.hero-section > h1{
+  line-height: 1.1;
+  width: 577px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.hero-section p{
+  font-size: 16px;
+  font-family: "inter", sans-serif;
+  font-weight: 200;
+}
+.hero-section > p{
+  width: 545px;
+  height: 33px;
+  margin: 40px 40px 0px 100px;
+}
+.hero-btn{
+  padding: 16px 54px;
+  width: 210px;
+  height: 52px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 62px ;
+  font-family: "inter", sans-serif;
+  margin: 40px 40px 0px 100px;
+}
+
+.stats{
+  display: flex;
+  gap: 40px;
+  margin: 40px 40px 0px 100px;
+}
+.stats h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.stats p{
+  margin-top: 5px ;
+}
+.banner{
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 122px;
+}
+.banner img{
+  height: 38px;
+}
+.v{
+    width: 166px;
+    height: 66px;
+}
+.z{
+  width: 91px;
+  height: 38px;
+}
+.g{
+  width: 156px;
+  height: 36px;
+}
+.p{
+  width: 194px;
+  height: 34px;
+}
+.c{
+  width: 206px;
+  height: 33px;
+}
+.new-arrival{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.new-arrival-heading{
+  font-size: 48px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+ 
+
+}
+.card img{
+  height: 298px;
+  width: 295px;
+  border-radius: 20px;
+  background-color: #d6d4d4;
+      
+}
+.card h4,p{
+  font-family: "inter",sans-serif;
+  margin: 5px 0px;
+}
+.reviews{
+  display: flex;
+  align-items: center;
+  gap: px;
+}
+.reviews i{
+  color: #ffc633;
+}
+.reviews p{
+  margin-left: 10px;
+}
+.view-all{
+  padding: 16px 54px;
+  width: 210px;
+  height: 52px;
+  color: black;
+  border: 0.5px solid black;
+  border-radius: 62px ;
+  font-family: "inter", sans-serif;
+}
+.browse{
+background-color: #d6d4d4;
+;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding-bottom: 30px;
+  margin: 100px 40px;
+
+
+}
+.browse-heading{
+  font-size: 48px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.formal , party{
+  width: 684px;
+  height: 286px;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+.gym , casual {
+  width: 407px;
+  height: 286px;
+  margin-left: 10px;
+}
+.divider{
+  border: none;
+  border-top:0.2px solid black ;
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+.topSeller h1{
+  font-size: 48px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
