@@ -198,17 +198,14 @@
   font-family: "inter", sans-serif;
 }
 .browse{
-background-color: #d6d4d4;
-;
+  background-color: #d6d4d4;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
   padding-bottom: 30px;
-  margin: 100px 40px;
-
-
+  margin: 100px 70px;
 }
 .browse-heading{
   font-size: 48px;
@@ -243,3 +240,151 @@ background-color: #d6d4d4;
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.heading{
+  padding: 0px 70px;
+  margin-bottom: 150px;
+}
+.heading h1{
+  font-size: 48px;
+  letter-spacing: 2px;
+  flex: 1;
+}
+.heaading i{
+  flex: 1;
+  gap: 20px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+}
+.review-card{
+  display: flex;
+  margin-top: 50px;
+}
+.Reviewcard{
+  width: 400px;
+  border: 0.5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  gap: 10px;
+  padding: 32px 28px;
+  display: block;
+  margin: 0px 15px;
+}
+.star-icon{
+  color: #ffc633;
+  margin: 10px 0px;
+}
+.review-card h2{
+  font-family: "inter",sans-serif;
+  margin: 5px 0px;
+  font-size: 20px
+}
+.review-card p{
+  font-size:16px ;
+  font-weight: 200;
+}
+#checkmark{
+  color:#00ab31;
+  font-size: 16px;
+}
+.signup-element {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+  border-radius: 20px;
+  margin: -100px 70px 70px;
+  position: relative;
+  transform: translateY(160px);
+
+}
+
+.signup-element h1 {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.3;
+  width: 350px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-icon-wrap {
+  position: relative;
+}
+
+.input-icon-wrap i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  padding-left: 20px;
+}
+
+.input-icon-wrap input {
+  width: 280px;
+  height: 44px;
+  border-radius: 30px;
+  border: none;
+  padding-left: 62px;
+  font-size: 14px;
+}
+
+.signup-form button {
+  width: 280px;
+  height: 44px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.footer-space{
+  background-color: #d6d4d4;
+  
+ 
+}
+.footer{
+      display: flex;
+      justify-content: space-between;
+      margin: 0px 70px;
+}
+.footer p{
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+.footer1{
+  margin-top:150px ;
+}
+.icons{
+  margin-top: 15px;
+  font-size: 24px;
+}
+.footer2{
+  margin-top:150px ;
+}
+.footer3{
+  margin-top: 150px;
+}
+.footer4{
+  margin-top: 150px;
+}
+.footer5{
+  margin-top: 150px;
+}
+.ending p{
+  margin-left: 70px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 20px 0px;
+}
+
