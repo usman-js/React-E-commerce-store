@@ -3,14 +3,51 @@ import zara from "../assets/zara.png"
 import parada from "../assets/parada.png"
 import gucci from "../assets/gucci.png"
 import ck from "../assets/ck.png"
+
+const brandsLogo = [
+    {
+        id:1,
+        src: varsace,
+        alt: "varsace",
+        className:"v"
+    },
+     {
+        id:2,
+        src: zara,
+        alt: "zara",
+        className:"z"
+    },
+     {
+        id:3,
+        src: parada,
+        alt: "parada",
+        className:"p"
+    },
+     {
+        id:4,
+        src: gucci,
+        alt: "gucci",
+        className:"g"
+    },
+     {
+        id:5,
+        src: ck,
+        alt: "ck",
+        className:"c"
+    }
+]
+
 export default function Banner(){
     return(
         <div className="banner">
-            <span><img className="v" src={varsace} alt="varsace" /></span>
-            <span><img className="z" src={zara} alt="zara" /></span>
-            <span><img className="p" src={parada} alt="parada" /></span>
-            <span> <img className="g" src={gucci} alt="gucci" /></span>
-            <span> <img className="c" src={ck} alt="ck" /></span>
+            {brandsLogo.map(brand => (
+                <img 
+                key={brand.id}
+                src={brand.src}
+                className={brand.className}
+                alt={brand.alt}
+                />
+            ))}
         </div>
     )
 } 

@@ -1,3 +1,46 @@
+
+const footerLinks=[
+    {
+        title: "Company",
+        links: [             
+            "About",
+            "Feature",
+            "Works",
+            "Career"
+        ]
+    },
+    {                      
+        title: "Help",
+        links: [              
+            "Customer Support",
+            "Delivery Details",
+            "Terms & Conditions",
+            "Privacy Policy"
+        ]
+    },
+     {                      
+        title: "FAQ",
+        links: [              
+            "Account",
+            "Manage Deliveries",
+            "Orders",
+            "Payments"
+        ]
+    },
+
+    {                       
+        title: "Resources",
+        links: [              
+            "Free eBooks",
+            "Development Tutorial",
+            "How to - Blog",
+            "YouTube Playlist"
+        ]
+    }
+
+]
+
+
 export default function Footer(){
     return(
         <div className="footer-space">
@@ -14,38 +57,20 @@ export default function Footer(){
                     <i class="fa-brands fa-github"></i>
                 </div>
             </div>
-            <div className="footer2">
-            <p><b>Company</b></p>
-            <p>About</p>
-            <p>Feature</p>
-            <p>Works</p>
-            <p>Career</p>
-            </div>
-             <div className="footer3">
-            <p><b>Help</b></p>
-            <p>Customer Support</p>
-            <p>Delivery Details</p>
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
-            </div>
-             <div className="footer4">
-            <p><b>FAQ</b></p>
-            <p>Account</p>
-            <p>Manage Deliveries</p>
-            <p>Orders</p>
-            <p>Payments</p>
-            </div>
-             <div className="footer5">
-            <p><b>Resources</b></p>
-            <p>Free eBooks</p>
-            <p>Development Tutorial</p>
-            <p>How to - Blog</p>
-            <p>Youtube Playlist</p>
+            <div className="footer-column">
+            {footerLinks.map((col, i) => (
+                <div className="title" key={i}>
+             <b>{col.title}</b>
+             {col.links.map((linkText, j)=>(
+                <a href="#">{linkText}</a>
+            ))}
+             </div>
+            ))}
             </div>
         </div>
          <hr className="divider"/>
          <div className="ending">
-            <p>Usman Ali Khan © 2006-2026, All Rights Reserved</p>
+            <p>Usman Ali Khan© 2006-2026, All Rights Reserved</p>
          </div>
         </div>
        
