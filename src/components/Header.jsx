@@ -1,13 +1,24 @@
+import React, { useState } from "react"
+
+
+
+
 export default function Header(){
+    const [openMenu , setOpenMenu] = useState(false)
     return(
         <header className="navbar">
+            <i 
+            id= "toggle"
+            className={` toggle ${openMenu ? "fa-solid fa-xmark" : "fa-solid fa-bars"}`}
+            onClick={()=>setOpenMenu(!openMenu)}
+            ></i>
             <h1>Shop.co</h1>
-            <div className="a-tags">
+           {openMenu && ( <div className="a-tags">
                 <a href="#">Shop</a>
                 <a href="#">On Sale</a>
                 <a href="#">New Arrival</a>
                 <a href="#">Brand</a>
-            </div>
+            </div>)}
             <div className="search-bar">
                 <div className="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
                 <input className="input-tag" type="text" placeholder="Search for products..." />
