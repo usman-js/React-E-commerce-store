@@ -36,10 +36,10 @@ const TopSellers =[
     }
 ]
 
-export default function Topseller(){
+export default function Topseller({Heading}){
     return(
         <div className="topSeller">
-            <h1>Top Seller</h1>
+            <h1>{Heading}</h1>
             <div className="cards">
                 {TopSellers.map(product=>(
                     <Productcard 

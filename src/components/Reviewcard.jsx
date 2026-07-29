@@ -10,6 +10,7 @@ export default function Reviewcard(props){
             </div>
             <h2>{props.name}<i id="checkmark" class="fa-solid fa-circle-check"></i></h2>
             <p>{props.text}</p>
+            <p>{props.date}</p>
         </div>
     )
 }
