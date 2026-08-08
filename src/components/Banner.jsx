@@ -39,7 +39,7 @@ const brandsLogo = [
 
 export default function Banner(){
     return(
-        <div className="banner">
+        <Image className="banner">
             {brandsLogo.map(brand => (
                 <img 
                 key={brand.id}
@@ -48,6 +48,6 @@ export default function Banner(){
                 alt={brand.alt}
                 />
             ))}
-        </div>
+        </Image>
     )
 } 
